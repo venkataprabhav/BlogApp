@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(php artisan:*)",
-      "Bash(grep -r \"note\\\\|Note\" /c/Users/prabh/larvelprojects/crashcourse/resources --include=*.blade.php --include=*.vue)",
-      "Bash(grep -r \"note\\\\|Note\" /c/Users/prabh/larvelprojects/crashcourse/app --include=*.php)"
-    ]
-  }
-}
