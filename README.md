@@ -7,27 +7,27 @@ A full-stack blog application built with Laravel. Users can register, log in, wr
 ## Screenshots
 
 ### Login
-<img width="969" height="594" alt="image" src="https://github.com/user-attachments/assets/d33401d2-238f-4bcb-9743-5d647a3bc206" />
+<img width="969" height="594" alt="image" src="https://github.com/user-attachments/assets/89117596-38bb-4e4c-9ee3-5f7dfc665a39" />
 
 
 ### Register
-<img width="975" height="634" alt="image" src="https://github.com/user-attachments/assets/41f2c8ce-9796-4c3d-b377-4b658f2c584d" />
+<img width="975" height="634" alt="image" src="https://github.com/user-attachments/assets/06335f60-af0b-4529-9655-6be7935409da" />
 
 
 ### All Blog Posts
-<img width="975" height="488" alt="image" src="https://github.com/user-attachments/assets/cef3263e-b9bd-47b8-bd4d-01b5ba42f3ff" />
+<img width="975" height="488" alt="image" src="https://github.com/user-attachments/assets/b582df2d-772a-4405-874c-422fe0bea8b8" />
 
 
 ### New Blog Post
-<img width="975" height="530" alt="image" src="https://github.com/user-attachments/assets/71bf1a8a-c355-42bd-8016-ccc39c04c207" />
+<img width="975" height="530" alt="image" src="https://github.com/user-attachments/assets/31ea790c-39fe-4cd9-9698-452dbec1aa58" />
 
-<img width="975" height="400" alt="image" src="https://github.com/user-attachments/assets/6b411881-4d4f-4372-8e24-cc9a4ea8a522" />
+<img width="975" height="400" alt="image" src="https://github.com/user-attachments/assets/fd47a539-085b-4fe4-b7cf-8123e6b95f70" />
 
 
 ### Edit Blog Post
-<img width="975" height="508" alt="image" src="https://github.com/user-attachments/assets/02a238ae-a6d3-4825-995f-c566bfc9538a" />
+<img width="975" height="508" alt="image" src="https://github.com/user-attachments/assets/ba3354e6-229b-4c39-b39d-48522a0fcddd" />
 
-<img width="975" height="393" alt="image" src="https://github.com/user-attachments/assets/2c3284bb-f0c3-419b-9abb-e812fd66161d" />
+<img width="975" height="393" alt="image" src="https://github.com/user-attachments/assets/a08db907-bb7b-45fe-88d7-27b3a48e013e" />
 
 
 ---
@@ -38,7 +38,7 @@ A full-stack blog application built with Laravel. Users can register, log in, wr
 - Create, view, edit, and delete blog posts
 - View posts from all users on the index page
 - Like and dislike any post (toggleable, one vote per user per post)
-- Edit and delete controls restricted to the post owner
+- Edit and delete controls restricted to the original poster
 - REST API with Bearer token authentication (Laravel Passport)
 - Full test suite using Pest
 
