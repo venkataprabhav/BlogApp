@@ -1,25 +1,34 @@
-# Blog App
+# BlogApp
 
-A full-stack blog application built with Laravel. Users can register, log in, write blog posts, and like or dislike each other's posts. The app ships with two interfaces — a server-rendered Blade web UI and a REST API for a React frontend.
+A full-stack blog application built with Laravel. Users can register, log in, write blog posts, and like or dislike each other's posts. The app ships with two interfaces — a server-rendered Blade web UI and a REST API for a React frontend. Unit tests conducted using Pest.
 
 ---
 
 ## Screenshots
 
 ### Login
-<!-- paste screenshot here -->
+<img width="969" height="594" alt="image" src="https://github.com/user-attachments/assets/d33401d2-238f-4bcb-9743-5d647a3bc206" />
+
 
 ### Register
-<!-- paste screenshot here -->
+<img width="975" height="634" alt="image" src="https://github.com/user-attachments/assets/41f2c8ce-9796-4c3d-b377-4b658f2c584d" />
+
 
 ### All Blog Posts
-<!-- paste screenshot here -->
+<img width="975" height="488" alt="image" src="https://github.com/user-attachments/assets/cef3263e-b9bd-47b8-bd4d-01b5ba42f3ff" />
+
 
 ### New Blog Post
-<!-- paste screenshot here -->
+<img width="975" height="530" alt="image" src="https://github.com/user-attachments/assets/71bf1a8a-c355-42bd-8016-ccc39c04c207" />
+
+<img width="975" height="400" alt="image" src="https://github.com/user-attachments/assets/6b411881-4d4f-4372-8e24-cc9a4ea8a522" />
+
 
 ### Edit Blog Post
-<!-- paste screenshot here -->
+<img width="975" height="508" alt="image" src="https://github.com/user-attachments/assets/02a238ae-a6d3-4825-995f-c566bfc9538a" />
+
+<img width="975" height="393" alt="image" src="https://github.com/user-attachments/assets/2c3284bb-f0c3-419b-9abb-e812fd66161d" />
+
 
 ---
 
@@ -54,31 +63,26 @@ A full-stack blog application built with Laravel. Users can register, log in, wr
 - PHP 8.2+
 - Composer
 - MySQL
-- Node.js & npm
+- npm
 
 ---
 
 ## Installation
 
-**1. Clone the repository**
-```bash
-git clone <repository-url>
-cd crashcourse
-```
 
-**2. Install dependencies**
+**1. Install dependencies**
 ```bash
 composer install
 npm install
 ```
 
-**3. Set up environment**
+**2. Set up environment**
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
 
-**4. Configure your database**
+**3. Configure your database**
 
 Update the following values in `.env` to match your MySQL setup:
 ```
@@ -118,46 +122,9 @@ The app will be available at `http://127.0.0.1:8000`.
 
 ---
 
-## API
-
-The REST API is available at `/api/*` and uses Laravel Passport Bearer tokens.
-
-### Authentication
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| POST | `/api/register` | No | Register a new user. Returns `user` + `token` |
-| POST | `/api/login` | No | Login. Returns `user` + `token` |
-| POST | `/api/logout` | Yes | Revoke the current token |
-| GET | `/api/me` | Yes | Get the authenticated user |
-
-### Blog Posts
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| GET | `/api/posts` | Yes | List all posts (paginated) |
-| POST | `/api/posts` | Yes | Create a post |
-| GET | `/api/posts/{id}` | Yes | Get a single post |
-| PUT | `/api/posts/{id}` | Yes | Update a post (owner only) |
-| DELETE | `/api/posts/{id}` | Yes | Delete a post (owner only) |
-| POST | `/api/posts/{id}/vote/like` | Yes | Like a post |
-| POST | `/api/posts/{id}/vote/dislike` | Yes | Dislike a post |
-
-Include the token in the `Authorization` header on all protected requests:
-```
-Authorization: Bearer <your-token>
-```
-
----
 
 ## Running Tests
 
 ```bash
 php artisan test
 ```
-
----
-
-## License
-
-This project is open-sourced under the [MIT license](https://opensource.org/licenses/MIT).
